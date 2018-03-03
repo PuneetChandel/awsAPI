@@ -23,3 +23,4 @@ If you are inside the firewall, add proxy to config file
 $ cat ~/.aws/config
 [default]
 proxy=http://myproxy
+
