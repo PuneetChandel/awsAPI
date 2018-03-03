@@ -16,7 +16,7 @@ $ cat ~/.aws/config
 Create a new python folder,virtual env, install boto3  
 $ mkdir awsSNSpublish  
 $ python3 -m venv vawssns  
-$ source vawssnstest/bin/activate  
+$ source awsSNSpublish/bin/activate  
 $ pip3 install boto3  
 
 If you are inside the firewall, add proxy to config file  
