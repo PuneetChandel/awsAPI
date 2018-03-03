@@ -13,14 +13,14 @@ Following files will be created
 $ cat ~/.aws/credentials  
 $ cat ~/.aws/config  
 
-Create a new python folder,virtual env, install boto3
-$ mkdir awsSNSpublish
-$ python3 -m venv vawssns
-$ source vawssnstest/bin/activate
-$ pip3 install boto3
+Create a new python folder,virtual env, install boto3  
+$ mkdir awsSNSpublish  
+$ python3 -m venv vawssns  
+$ source vawssnstest/bin/activate  
+$ pip3 install boto3  
 
-If you are inside the firewall, add proxy to config file
-$ cat ~/.aws/config
-[default]
-proxy=http://myproxy
+If you are inside the firewall, add proxy to config file  
+$ cat ~/.aws/config  
+[default]  
+proxy=http://myproxy  
 
