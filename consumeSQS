@@ -1,0 +1,13 @@
+import boto3
+import json
+
+
+session = boto3.Session(profile_name='myAWSDev')
+sqs = session.resource('sqs',region_name='us-east-2')
+
+queue = sqs.get_queue_by_name(QueueName='MySQS')
+
+for message in queue.receive_messages():
+    data=json.loads(message.body)
+    print(data["Message"])
+    message.delete()
